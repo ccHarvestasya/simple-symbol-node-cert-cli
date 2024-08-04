@@ -18,7 +18,7 @@ $ npm install -g simple-symbol-node-cert-cli
 $ simple-symbol-node-cert-cli COMMAND
 running command...
 $ simple-symbol-node-cert-cli (--version)
-simple-symbol-node-cert-cli/1.0.2 win32-x64 node-v18.19.1
+simple-symbol-node-cert-cli/1.0.3 win32-x64 node-v18.19.1
 $ simple-symbol-node-cert-cli --help [COMMAND]
 USAGE
   $ simple-symbol-node-cert-cli COMMAND
@@ -58,7 +58,7 @@ EXAMPLES
   $ simple-symbol-node-cert-cli generate --caname "Test CA" --nodename "Test Node"
 ```
 
-_See code: [src/commands/generate/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.2/src/commands/generate/index.ts)_
+_See code: [src/commands/generate/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.3/src/commands/generate/index.ts)_
 
 ## `simple-symbol-node-cert-cli info`
 
@@ -78,7 +78,7 @@ EXAMPLES
   $ simple-symbol-node-cert-cli info
 ```
 
-_See code: [src/commands/info/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.2/src/commands/info/index.ts)_
+_See code: [src/commands/info/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.3/src/commands/info/index.ts)_
 
 ## `simple-symbol-node-cert-cli renew`
 
@@ -102,5 +102,5 @@ EXAMPLES
   $ simple-symbol-node-cert-cli renew
 ```
 
-_See code: [src/commands/renew/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.2/src/commands/renew/index.ts)_
+_See code: [src/commands/renew/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.3/src/commands/renew/index.ts)_
 <!-- commandsstop -->
