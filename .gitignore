@@ -17,5 +17,6 @@ pnpm-lock.yaml
 !.yarn/sdks
 !.yarn/versions
 
+*.code-workspace
 /cert
 privatekeys.yaml
