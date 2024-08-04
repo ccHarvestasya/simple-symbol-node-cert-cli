@@ -7,40 +7,40 @@ Symbol ノード証明書を簡単に生成
 [![Downloads/week](https://img.shields.io/npm/dw/simple-symbol-node-cert-cli.svg)](https://npmjs.org/package/simple-symbol-node-cert-cli)
 
 <!-- toc -->
-
-- [使い方](#使い方)
-- [コマンド](#コマンド)
+* [Simple Symbol Node Cert CLI](#simple-symbol-node-cert-cli)
 <!-- tocstop -->
 
 ## 使い方
 
 <!-- usage -->
-
 ```sh-session
-$ npm i -g simple-symbol-node-cert-cli
-$ simple-symbol-node-cert-cli generate
-...
-$ simple-symbol-node-cert-cli --help
+$ npm install -g simple-symbol-node-cert-cli
+$ simple-symbol-node-cert-cli COMMAND
+running command...
+$ simple-symbol-node-cert-cli (--version)
+simple-symbol-node-cert-cli/1.0.0 win32-x64 node-v18.19.1
+$ simple-symbol-node-cert-cli --help [COMMAND]
+USAGE
+  $ simple-symbol-node-cert-cli COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 ## コマンド
 
 <!-- commands -->
+* [`simple-symbol-node-cert-cli generate`](#simple-symbol-node-cert-cli-generate)
+* [`simple-symbol-node-cert-cli info`](#simple-symbol-node-cert-cli-info)
+* [`simple-symbol-node-cert-cli renew`](#simple-symbol-node-cert-cli-renew)
 
-- [`simple-symbol-node-cert-cli generate`](#simple-symbol-node-cert-cli-generate)
-- [`simple-symbol-node-cert-cli renew`](#simple-symbol-node-cert-cli-renew)
-- [`simple-symbol-node-cert-cli info`](#simple-symbol-node-cert-cli-info)
+## `simple-symbol-node-cert-cli generate`
 
-### `simple-symbol-node-cert-cli generate`
-
-```plaintext
 Symbolノード証明書を作成します。
 
+```
 USAGE
-  $ simple-symbol-node-cert-cli generate [--cadays <value>] [--caname <value>] [--certdir <value>] [--force] [--nodedays <value>] [--nodename <value>] [--privatekeys <value>]
+  $ simple-symbol-node-cert-cli generate [--cadays <value>] [--caname <value>] [--certdir <value>] [--force]
+    [--nodedays <value>] [--nodename <value>] [--privatekeys <value>]
 
 FLAGS
   --cadays=<value>       [default: 7300] CA証明書有効日数
@@ -56,26 +56,38 @@ DESCRIPTION
 
 EXAMPLES
   $ simple-symbol-node-cert-cli generate --caname "Test CA" --nodename "Test Node"
-  hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-`privatekeys.yaml`に入力された秘密鍵から証明書を生成します。  
-ファイルが存在しなければランダムに生成します。
+_See code: [src/commands/generate/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.0/src/commands/generate/index.ts)_
 
-```yaml
-main:
-  privateKey: 5737DBF5B9******************************************************
-transport:
-  privateKey: 5E4574528E******************************************************
+## `simple-symbol-node-cert-cli info`
+
+Symbolノード証明書の情報を参照します。
+
+```
+USAGE
+  $ simple-symbol-node-cert-cli info [--certdir <value>]
+
+FLAGS
+  --certdir=<value>  [default: ./cert] 証明書ディレクトリパス
+
+DESCRIPTION
+  Symbolノード証明書の情報を参照します。
+
+EXAMPLES
+  $ simple-symbol-node-cert-cli info
 ```
 
-### `simple-symbol-node-cert-cli renew`
+_See code: [src/commands/info/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.0/src/commands/info/index.ts)_
 
-```plaintext
+## `simple-symbol-node-cert-cli renew`
+
 Symbolノード証明書を更新します。
 
+```
 USAGE
-  $ simple-symbol-node-cert-cli renew [--cadays <value>] [--certdir <value>] [--nodedays <value>] [--privatekeys <value>]
+  $ simple-symbol-node-cert-cli renew [--cadays <value>] [--certdir <value>] [--nodedays <value>]
+    [--privatekeys <value>]
 
 FLAGS
   --cadays=<value>       [default: 7300] CA証明書有効日数
@@ -90,22 +102,5 @@ EXAMPLES
   $ simple-symbol-node-cert-cli renew
 ```
 
-### `simple-symbol-node-cert-cli info`
-
-```plaintext
-Symbolノード証明書の情報を参照します。
-
-USAGE
-  $ simple-symbol-node-cert-cli info [--certdir <value>]
-
-FLAGS
-  --certdir=<value>  [default: ./cert] 証明書ディレクトリパス
-
-DESCRIPTION
-  Symbolノード証明書の情報を参照します。
-
-EXAMPLES
-  $ simple-symbol-node-cert-cli info
-```
-
+_See code: [src/commands/renew/index.ts](https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/blob/v1.0.0/src/commands/renew/index.ts)_
 <!-- commandsstop -->
