@@ -5961,7 +5961,7 @@ __metadata:
     mocha: "npm:^10"
     oclif: "npm:^4"
     shx: "npm:^0.3.3"
-    simple-symbol-node-cert: "npm:^1.0.3"
+    simple-symbol-node-cert: "npm:^1.0.4"
     ts-node: "npm:^10"
     typescript: "npm:^5"
   bin:
@@ -5969,14 +5969,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"simple-symbol-node-cert@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "simple-symbol-node-cert@npm:1.0.3"
+"simple-symbol-node-cert@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "simple-symbol-node-cert@npm:1.0.4"
   dependencies:
     crypto-js: "npm:^4.2.0"
     js-yaml: "npm:^4.1.0"
     symbol-sdk: "npm:^3.2.2"
-  checksum: 10c0/7257d9e34a765e919e670ce15a93d92da1eef2ca80582d37c433fb5ad726c53ae7268a44f386e18b5405cd99c45b542a65d2e868f04feb3cd850f14015097aea
+  checksum: 10c0/e670576eb6662042f28d80b337bde812b24bc8b3573d0a5bc46b0d1a3d26f5d29b68cbf1314b6522f49130af864ccf902d16a10b551bc7ec5ec291542df87754
   languageName: node
   linkType: hard
 
