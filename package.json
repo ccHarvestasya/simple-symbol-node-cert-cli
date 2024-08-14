@@ -1,7 +1,7 @@
 {
   "name": "simple-symbol-node-cert-cli",
   "description": "Simplified symbol certificate generation",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Mimosa Harvestasya @MimosaHrvsty",
   "bin": "./bin/run.js",
   "bugs": "https://github.com/ccHarvestasya/simple-symbol-node-cert-cli/issues",
