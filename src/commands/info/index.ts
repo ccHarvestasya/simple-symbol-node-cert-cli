@@ -12,11 +12,17 @@ export default class Generate extends Command {
       description: '証明書ディレクトリパス',
       required: false,
     }),
+    networkId: Flags.string({
+      char: 'n',
+      default: 'mainnet',
+      description: 'ネットワークID(mainnet/testnet/any number)',
+      required: false,
+    }),
   }
 
   async run(): Promise<void> {
     const { flags } = await this.parse(Generate)
     const ssnc = new SimpleSymbolNodeCert()
-    ssnc.info(flags.certdir)
+    ssnc.info(flags.networkId, flags.certdir)
   }
 }
